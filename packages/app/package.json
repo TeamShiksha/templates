@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node index.js",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,8 @@
   "dependencies": {
     "body-parser": "^1.20.3",
     "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.2"
   }
 }

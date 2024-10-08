@@ -7,7 +7,7 @@
   "scripts": {
     "build": "lerna run build",
     "start": "lerna run start --parallel",
-    "test": "lerna run test --coverage",
+    "test": "lerna run test",
     "prepare": "husky",
     "lint:ui": "lerna run lint --scope ui",
     "lint:app": "lerna run lint --scope app",
