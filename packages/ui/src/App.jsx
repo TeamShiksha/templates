@@ -1,10 +1,10 @@
+import React from 'react';
 import './App.css';
+import TestComponent from './components/TestComponent';
 
 function App() {
   return (
-    <>
-      <h1>Testing Hello world</h1>
-    </>
+    <TestComponent />
   );
 }
 
