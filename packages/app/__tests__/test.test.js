@@ -18,11 +18,18 @@ describe('Items API', () => {
   it('should get an item by ID', async () => {
     const response = await request(app).get('/items/1');
     expect(response.status).toBe(200);
-    expect(response.body).toEqual({ id: 1, name: 'Test Item', description: 'This is a test item.' });
+    expect(response.body).toEqual({
+      id: 1,
+      name: 'Test Item',
+      description: 'This is a test item.',
+    });
   });
 
   it('should update an item by ID', async () => {
-    const updatedItem = { name: 'Updated Item', description: 'This is an updated item.' };
+    const updatedItem = {
+      name: 'Updated Item',
+      description: 'This is an updated item.',
+    };
     const response = await request(app).put('/items/1').send(updatedItem);
     expect(response.status).toBe(200);
     expect(response.body).toEqual({ id: 1, ...updatedItem });

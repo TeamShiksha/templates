@@ -5,9 +5,11 @@ import testRoutes from './routes/testRoutes.js';
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-app.use(cors({
-  origin: `http://localhost:${process.env.UI_PORT}` // Replace with the port your React app runs on
-}));
+app.use(
+  cors({
+    origin: `http://localhost:${process.env.UI_PORT}`, // Replace with the port your React app runs on
+  })
+);
 
 app.use(express.json());
 

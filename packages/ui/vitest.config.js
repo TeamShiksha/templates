@@ -6,7 +6,7 @@ export default defineConfig({
     environment: 'happy-dom',
     coverage: {
       reporter: ['text', 'html'],
-      include: ['src/**/*.{js,ts,vue}'],  // Adjust based on file types
+      include: ['src/**/*.{js,ts,vue}'], // Adjust based on file types
     },
   },
 });

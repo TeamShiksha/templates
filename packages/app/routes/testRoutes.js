@@ -1,10 +1,10 @@
 import express from 'express';
 import {
-    getAllItems,
-    getItemById,
-    createItem,
-    updateItem,
-    deleteItem,
+  getAllItems,
+  getItemById,
+  createItem,
+  updateItem,
+  deleteItem,
 } from '../controllers/testControllers.js';
 
 const router = express.Router();
