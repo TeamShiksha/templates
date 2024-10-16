@@ -1,6 +1,6 @@
-import express from 'express';
-import cors from 'cors';
-import testRoutes from './routes/testRoutes.js';
+const express = require('express');
+const cors = require('cors');
+const testRoutes = require('./routes/testRoutes.js');
 
 const app = express();
 const PORT = process.env.PORT || 5001;
@@ -15,8 +15,8 @@ app.use(express.json());
 
 app.use('/test', testRoutes);
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
 
-export default app;
+module.exports = server;

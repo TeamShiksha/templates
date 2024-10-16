@@ -65,6 +65,7 @@ const TestComponent = () => {
           value={newItem.name}
           onChange={handleInputChange}
           placeholder="Item Name"
+          data-testid="add-item-name" // Unique test ID for adding items
         />
         <input
           type="text"
@@ -72,6 +73,7 @@ const TestComponent = () => {
           value={newItem.description}
           onChange={handleInputChange}
           placeholder="Item Description"
+          data-testid="add-item-description" // Unique test ID for adding items
         />
         <button onClick={addItem}>Add Item</button>
       </div>
@@ -95,6 +97,7 @@ const TestComponent = () => {
             value={editItem.name}
             onChange={(e) => setEditItem({ ...editItem, name: e.target.value })}
             placeholder="Item Name"
+            data-testid="edit-item-name" // Unique test ID for editing items
           />
           <input
             type="text"
@@ -104,6 +107,7 @@ const TestComponent = () => {
               setEditItem({ ...editItem, description: e.target.value })
             }
             placeholder="Item Description"
+            data-testid="edit-item-description" // Unique test ID for editing items
           />
           <button onClick={updateItem}>Update Item</button>
           <button onClick={() => setEditItem(null)}>Cancel</button>
