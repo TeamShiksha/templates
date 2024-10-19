@@ -52,6 +52,7 @@ const TestComponent = () => {
       .then(() => {
         setItems(items.filter((item) => item.id !== id));
       })
+      
       .catch((error) => console.error('Error deleting item:', error));
   };
 
@@ -63,7 +64,7 @@ const TestComponent = () => {
           type="text"
           name="name"
           value={newItem.name}
-          onChange={handleInputChange}
+          onChange={handleInputChange }
           placeholder="Item Name"
           data-testid="add-item-name" // Unique test ID for adding items
         />
