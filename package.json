@@ -8,7 +8,6 @@
     "build": "lerna run build",
     "start": "lerna run start --parallel",
     "test": "lerna run test --stream",
-    "prepare": "husky",
     "lint": "lerna run lint",
     "format": "lerna run format",
     "format:check": "lerna run format:check",
