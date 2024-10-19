@@ -6,7 +6,7 @@ export default defineConfig({
     environment: 'happy-dom',
     coverage: {
       reporter: ['text', 'html'],
-      include: ['src/**/*.{js,ts,vue}'],
+      include: ['src/**/*.{jsx,js,ts,vue}'],
     },
   },
 });
